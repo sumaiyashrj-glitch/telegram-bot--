@@ -16,7 +16,7 @@ async def button(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     text = "হ্যালো! আমি চালু আছি" if q.data == "hi" else "/start লিখুন"
     await q.edit_message_text(text)
 
-app = Application.builder().token(os.environ["BOT_TOKEN"]).build()
+app = Application.builder().token(os.environ["8710784784:AAHcVZ88xxbu_iDBbHSVSQE9t6wLm_y1I7M"]).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(button))
 app.run_polling()
